@@ -1,0 +1,5 @@
+---
+- name: Install Lingon X via Homebrew Cask
+  homebrew_cask:
+    name: lingon-x
+  when: ansible_os_family == "Darwin"
